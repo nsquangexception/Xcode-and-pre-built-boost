@@ -12,5 +12,6 @@
 #include <stdio.h>
 namespace NSCount {
     void test_stat();
+    void example1();
 }
 #endif /* NSCount_hpp */
