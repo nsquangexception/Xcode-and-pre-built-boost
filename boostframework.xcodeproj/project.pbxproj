@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7ACC57E4215547AF0035CD4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC57E3215547AF0035CD4F /* AppDelegate.m */; };
+		7ACC57E4215547AF0035CD4F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC57E3215547AF0035CD4F /* AppDelegate.mm */; settings = {COMPILER_FLAGS = "-std=c++11"; }; };
 		7ACC57E7215547AF0035CD4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC57E6215547AF0035CD4F /* ViewController.m */; };
 		7ACC57E9215547B00035CD4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACC57E8215547B00035CD4F /* Assets.xcassets */; };
 		7ACC57EC215547B00035CD4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACC57EA215547B00035CD4F /* Main.storyboard */; };
 		7ACC57EF215547B00035CD4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC57EE215547B00035CD4F /* main.m */; };
 		7ACC57FA215547B10035CD4F /* boostframeworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC57F9215547B10035CD4F /* boostframeworkTests.m */; };
 		7ACC5805215547B10035CD4F /* boostframeworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC5804215547B10035CD4F /* boostframeworkUITests.m */; };
+		7ACC5816215548000035CD4F /* boost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACC5812215547D70035CD4F /* boost.framework */; };
+		7ACC581921554B8E0035CD4F /* NSCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC581721554B8E0035CD4F /* NSCount.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		7ACC57DF215547AF0035CD4F /* boostframework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boostframework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACC57E2215547AF0035CD4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7ACC57E3215547AF0035CD4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7ACC57E3215547AF0035CD4F /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		7ACC57E5215547AF0035CD4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7ACC57E6215547AF0035CD4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7ACC57E8215547B00035CD4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +52,9 @@
 		7ACC5800215547B10035CD4F /* boostframeworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boostframeworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACC5804215547B10035CD4F /* boostframeworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boostframeworkUITests.m; sourceTree = "<group>"; };
 		7ACC5806215547B10035CD4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ACC5812215547D70035CD4F /* boost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = boost.framework; sourceTree = "<group>"; };
+		7ACC581721554B8E0035CD4F /* NSCount.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NSCount.cpp; sourceTree = "<group>"; };
+		7ACC581821554B8E0035CD4F /* NSCount.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NSCount.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACC5816215548000035CD4F /* boost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,7 @@
 		7ACC57D6215547AF0035CD4F = {
 			isa = PBXGroup;
 			children = (
+				7ACC5812215547D70035CD4F /* boost.framework */,
 				7ACC57E1215547AF0035CD4F /* boostframework */,
 				7ACC57F8215547B10035CD4F /* boostframeworkTests */,
 				7ACC5803215547B10035CD4F /* boostframeworkUITests */,
@@ -101,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				7ACC57E2215547AF0035CD4F /* AppDelegate.h */,
-				7ACC57E3215547AF0035CD4F /* AppDelegate.m */,
+				7ACC57E3215547AF0035CD4F /* AppDelegate.mm */,
 				7ACC57E5215547AF0035CD4F /* ViewController.h */,
 				7ACC57E6215547AF0035CD4F /* ViewController.m */,
 				7ACC57E8215547B00035CD4F /* Assets.xcassets */,
@@ -109,6 +116,8 @@
 				7ACC57ED215547B00035CD4F /* Info.plist */,
 				7ACC57EE215547B00035CD4F /* main.m */,
 				7ACC57F0215547B00035CD4F /* boostframework.entitlements */,
+				7ACC581721554B8E0035CD4F /* NSCount.cpp */,
+				7ACC581821554B8E0035CD4F /* NSCount.hpp */,
 			);
 			path = boostframework;
 			sourceTree = "<group>";
@@ -262,7 +271,8 @@
 			files = (
 				7ACC57E7215547AF0035CD4F /* ViewController.m in Sources */,
 				7ACC57EF215547B00035CD4F /* main.m in Sources */,
-				7ACC57E4215547AF0035CD4F /* AppDelegate.m in Sources */,
+				7ACC581921554B8E0035CD4F /* NSCount.cpp in Sources */,
+				7ACC57E4215547AF0035CD4F /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +435,10 @@
 				CODE_SIGN_ENTITLEMENTS = boostframework/boostframework.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = boostframework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,6 +456,10 @@
 				CODE_SIGN_ENTITLEMENTS = boostframework/boostframework.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = boostframework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
